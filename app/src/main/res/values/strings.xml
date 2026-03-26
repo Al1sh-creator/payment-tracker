@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoExpense</string>
+
+    <!-- Activity Titles -->
+    <string name="title_transactions">Transactions</string>
+    <string name="title_add_transaction">Add Transaction</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Dashboard Labels -->
+    <string name="label_expense">Monthly Expense</string>
+    <string name="label_income">Monthly Income</string>
+    <string name="label_balance">Net Balance</string>
+    <string name="label_category_breakdown">Category Breakdown</string>
+    <string name="label_monthly_overview">Expense by Category</string>
+    <string name="add_transaction">Add Transaction</string>
+
+    <!-- Form Labels -->
+    <string name="hint_amount">Amount (₹)</string>
+    <string name="hint_merchant">Merchant / Sender Name</string>
+    <string name="label_type">Transaction Type</string>
+    <string name="label_category">Category</string>
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="save">Save Transaction</string>
+
+    <!-- Transaction List -->
+    <string name="search_hint">Search by merchant…</string>
+    <string name="no_transactions">No transactions found</string>
+
+    <!-- Settings -->
+    <string name="sms_detection">Auto SMS Detection</string>
+    <string name="sms_detection_desc">Automatically detect UPI transactions from SMS</string>
+    <string name="notification_capture">Bank app notifications</string>
+    <string name="notification_capture_desc">Parse payment alerts from notifications when SMS is missing. Turn on and grant notification access for AutoExpense in the next screen.</string>
+    <string name="open_notification_access">Open notification access</string>
+    <string name="import_recent_sms">Import recent SMS</string>
+    <string name="import_recent_sms_desc">Scan the last 50 inbox messages and add any matching payments (uses READ_SMS).</string>
+    <string name="reconcile_last_24h_sms">Re-scan last 24 hours</string>
+    <string name="reconcile_last_24h_sms_desc">Scan recent inbox messages from the last day and insert any missing payments (deduped).</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode_desc">Switch between light and dark theme</string>
+    <string name="export_csv">Export to CSV</string>
+    <string name="delete_all">Delete All Transactions</string>
+
+    <!-- Privacy Notice -->
+    <string name="privacy_title">Privacy Notice</string>
+    <string name="privacy_body">AutoExpense reads your SMS messages to automatically detect UPI and bank transactions. Optionally, you can enable reading payment-related text from notifications in Settings (Android notification listener); that stays on your device only.\n\n🔒 Your data is 100% private:\n• All data is stored locally on your device\n• No SMS or notification text is uploaded to any server\n• No personal information is shared with third parties\n• You can delete all data at any time from Settings\n\nThis app uses READ_SMS and RECEIVE_SMS solely to detect payment alerts. You can disable SMS capture or notification capture independently in Settings.\n\nBy tapping "Accept &amp; Continue", you agree to grant these permissions for the purpose described above.</string>
+    <string name="accept_continue">Accept &amp; Continue</string>
+
+    <!-- Menu -->
+    <string name="menu_transactions">Transactions</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Insights & Subscriptions -->
+    <string name="title_subscriptions">Subscriptions</string>
+    <string name="label_smart_insights">Smart Insights</string>
+    <string name="no_subscriptions">No recurring subscriptions detected yet.</string>
+</resources>

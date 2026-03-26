@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                       
+                                                   
+
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/cardTransaction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="1dp"
+    style="@style/Widget.Material3.CardView.Elevated" android:tag="layout/item_transaction_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:gravity="center_vertical">
+
+        <!-- Type indicator bar -->
+        <View
+            android:id="@+id/viewTypeIndicator"
+            android:layout_width="4dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/rounded_indicator" />
+
+        <!-- Transaction details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Merchant Name -->
+            <TextView
+                android:id="@+id/tvMerchantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceTitleSmall"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Merchant Name" />
+
+            <!-- Category -->
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textAppearance="?attr/textAppearanceLabelMedium"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:text="Category" />
+
+            <!-- Payment method -->
+            <TextView
+                android:id="@+id/tvPaymentMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textAppearance="?attr/textAppearanceLabelSmall"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:text="UPI" />
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textAppearance="?attr/textAppearanceLabelSmall"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:text="Date" />
+
+        </LinearLayout>
+
+        <!-- Amount and Type Badge -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <!-- Amount -->
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:text="₹0.00" />
+
+            <!-- Debit/Credit badge -->
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                android:textAppearance="?attr/textAppearanceLabelSmall"
+                android:textColor="@android:color/white"
+                android:background="@drawable/badge_background"
+                android:text="Debit" />
+
+            <!-- Split button (NEW) -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSplit"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginTop="4dp"
+                android:text="Split"
+                android:textAppearance="?attr/textAppearanceLabelSmall"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:paddingHorizontal="8dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                app:icon="@android:drawable/ic_menu_share"
+                app:iconSize="14dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+         

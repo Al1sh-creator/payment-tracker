@@ -1,0 +1,377 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.autoexpense"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- SMS Permissions -->
+12    <uses-permission android:name="android.permission.READ_SMS" />
+12-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:5:5-67
+12-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+13-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:6:5-70
+13-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:6:22-67
+14
+15    <!-- Storage for CSV Export -->
+16    <uses-permission
+16-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:9:5-10:38
+17        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+17-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:9:22-78
+18        android:maxSdkVersion="28" />
+18-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:10:9-35
+19    <uses-permission
+19-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:11:5-12:38
+20        android:name="android.permission.READ_EXTERNAL_STORAGE"
+20-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:11:22-77
+21        android:maxSdkVersion="32" />
+21-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:12:9-35
+22
+23    <!-- SMS permissions imply telephony; not required so the app can install on devices without SMS (e.g. some tablets / Chrome OS). -->
+24    <uses-feature
+24-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:15:5-17:36
+25        android:name="android.hardware.telephony"
+25-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:16:9-50
+26        android:required="false" />
+26-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:17:9-33
+27
+28    <permission
+28-->[androidx.core:core:1.13.0] C:\Users\ALISH\.gradle\caches\transforms-3\804bc4569c426f48e0736cb992bb4b82\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+29        android:name="com.autoexpense.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.13.0] C:\Users\ALISH\.gradle\caches\transforms-3\804bc4569c426f48e0736cb992bb4b82\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.13.0] C:\Users\ALISH\.gradle\caches\transforms-3\804bc4569c426f48e0736cb992bb4b82\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.autoexpense.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+32-->[androidx.core:core:1.13.0] C:\Users\ALISH\.gradle\caches\transforms-3\804bc4569c426f48e0736cb992bb4b82\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.13.0] C:\Users\ALISH\.gradle\caches\transforms-3\804bc4569c426f48e0736cb992bb4b82\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+33    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+34    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+34-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\ALISH\.gradle\caches\transforms-3\65b4ae9dd694027457e0da5e106cd046\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
+34-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\ALISH\.gradle\caches\transforms-3\65b4ae9dd694027457e0da5e106cd046\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:22-76
+35    <uses-permission android:name="android.permission.INTERNET" />
+35-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\ALISH\.gradle\caches\transforms-3\65b4ae9dd694027457e0da5e106cd046\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
+35-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\ALISH\.gradle\caches\transforms-3\65b4ae9dd694027457e0da5e106cd046\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:26:22-64
+36
+37    <application
+37-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:19:5-93:19
+38        android:allowBackup="true"
+38-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:20:9-35
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.13.0] C:\Users\ALISH\.gradle\caches\transforms-3\804bc4569c426f48e0736cb992bb4b82\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+40        android:debuggable="true"
+41        android:extractNativeLibs="false"
+42        android:icon="@mipmap/ic_launcher"
+42-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:21:9-43
+43        android:label="@string/app_name"
+43-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:22:9-41
+44        android:roundIcon="@mipmap/ic_launcher"
+44-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:23:9-48
+45        android:supportsRtl="true"
+45-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:24:9-35
+46        android:theme="@style/Theme.AutoExpense" >
+46-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:25:9-49
+47
+48        <!-- Privacy Notice shown on first launch -->
+49        <activity
+49-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:28:9-35:20
+50            android:name="com.autoexpense.ui.activities.PrivacyNoticeActivity"
+50-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:29:13-64
+51            android:exported="true" >
+51-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:30:13-36
+52            <intent-filter>
+52-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:31:13-34:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:32:17-69
+53-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:32:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:33:17-77
+55-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:33:27-74
+56            </intent-filter>
+57        </activity>
+58
+59        <!-- Main Dashboard -->
+60        <activity
+60-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:38:9-40:40
+61            android:name="com.autoexpense.ui.activities.MainActivity"
+61-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:39:13-55
+62            android:exported="false" />
+62-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:40:13-37
+63
+64        <!-- Transaction List -->
+65        <activity
+65-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:43:9-45:40
+66            android:name="com.autoexpense.ui.activities.TransactionListActivity"
+66-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:44:13-66
+67            android:exported="false" />
+67-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:45:13-37
+68
+69        <!-- Add Transaction -->
+70        <activity
+70-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:48:9-51:58
+71            android:name="com.autoexpense.ui.activities.AddTransactionActivity"
+71-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:49:13-65
+72            android:exported="false"
+72-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:50:13-37
+73            android:windowSoftInputMode="adjustResize" />
+73-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:51:13-55
+74        <activity
+74-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:53:9-56:59
+75            android:name="com.autoexpense.ui.activities.SubscriptionsActivity"
+75-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:54:13-64
+76            android:exported="false"
+76-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:55:13-37
+77            android:label="@string/title_subscriptions" />
+77-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:56:13-56
+78        <activity
+78-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:58:9-61:42
+79            android:name="com.autoexpense.ui.activities.SplitBillActivity"
+79-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:59:13-60
+80            android:exported="false"
+80-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:60:13-37
+81            android:label="Split Bill" />
+81-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:61:13-39
+82        <activity
+82-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:63:9-66:44
+83            android:name="com.autoexpense.ui.activities.ScannerActivity"
+83-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:64:13-58
+84            android:exported="false"
+84-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:65:13-37
+85            android:label="Scan Receipt" />
+85-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:66:13-41
+86
+87        <!-- Settings -->
+88        <activity
+88-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:69:9-71:40
+89            android:name="com.autoexpense.ui.activities.SettingsActivity"
+89-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:70:13-59
+90            android:exported="false" />
+90-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:71:13-37
+91
+92        <!-- SMS BroadcastReceiver -->
+93        <receiver
+93-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:74:9-81:20
+94            android:name="com.autoexpense.receiver.SmsReceiver"
+94-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:75:13-49
+95            android:exported="true"
+95-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:76:13-36
+96            android:permission="android.permission.BROADCAST_SMS" >
+96-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:77:13-66
+97            <intent-filter android:priority="1000" >
+97-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:78:13-80:29
+97-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:78:28-51
+98                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+98-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:79:17-82
+98-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:79:25-79
+99            </intent-filter>
+100        </receiver>
+101
+102        <!-- Bank / UPI notification text capture (user must enable in system notification settings) -->
+103        <service
+103-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:84:9-91:19
+104            android:name="com.autoexpense.service.BankNotificationListenerService"
+104-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:85:13-68
+105            android:exported="true"
+105-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:86:13-36
+106            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+106-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:87:13-87
+107            <intent-filter>
+107-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:88:13-90:29
+108                <action android:name="android.service.notification.NotificationListenerService" />
+108-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:89:17-99
+108-->C:\Users\ALISH\Desktop\payment tracker\app\src\main\AndroidManifest.xml:89:25-96
+109            </intent-filter>
+110        </service>
+111        <service
+111-->[androidx.camera:camera-camera2:1.3.1] C:\Users\ALISH\.gradle\caches\transforms-3\534046d0d469444701cd49a4f76477d4\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:24:9-33:19
+112            android:name="androidx.camera.core.impl.MetadataHolderService"
+112-->[androidx.camera:camera-camera2:1.3.1] C:\Users\ALISH\.gradle\caches\transforms-3\534046d0d469444701cd49a4f76477d4\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:25:13-75
+113            android:enabled="false"
+113-->[androidx.camera:camera-camera2:1.3.1] C:\Users\ALISH\.gradle\caches\transforms-3\534046d0d469444701cd49a4f76477d4\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:26:13-36
+114            android:exported="false" >
+114-->[androidx.camera:camera-camera2:1.3.1] C:\Users\ALISH\.gradle\caches\transforms-3\534046d0d469444701cd49a4f76477d4\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:27:13-37
+115            <meta-data
+115-->[androidx.camera:camera-camera2:1.3.1] C:\Users\ALISH\.gradle\caches\transforms-3\534046d0d469444701cd49a4f76477d4\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:30:13-32:89
+116                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+116-->[androidx.camera:camera-camera2:1.3.1] C:\Users\ALISH\.gradle\caches\transforms-3\534046d0d469444701cd49a4f76477d4\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:31:17-103
+117                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+117-->[androidx.camera:camera-camera2:1.3.1] C:\Users\ALISH\.gradle\caches\transforms-3\534046d0d469444701cd49a4f76477d4\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:32:17-86
+118        </service>
+119        <service
+119-->[androidx.room:room-runtime:2.6.1] C:\Users\ALISH\.gradle\caches\transforms-3\3b7b0db5a1fc2f21e2b769510c2b9d34\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+120            android:name="androidx.room.MultiInstanceInvalidationService"
+120-->[androidx.room:room-runtime:2.6.1] C:\Users\ALISH\.gradle\caches\transforms-3\3b7b0db5a1fc2f21e2b769510c2b9d34\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+121            android:directBootAware="true"
+121-->[androidx.room:room-runtime:2.6.1] C:\Users\ALISH\.gradle\caches\transforms-3\3b7b0db5a1fc2f21e2b769510c2b9d34\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+122            android:exported="false" />
+122-->[androidx.room:room-runtime:2.6.1] C:\Users\ALISH\.gradle\caches\transforms-3\3b7b0db5a1fc2f21e2b769510c2b9d34\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+123        <service
+123-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\dc305a2857c5e87c2ab2a833d1d4a11a\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:9:9-15:19
+124            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+124-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\dc305a2857c5e87c2ab2a833d1d4a11a\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:10:13-91
+125            android:directBootAware="true"
+125-->[com.google.mlkit:common:18.8.0] C:\Users\ALISH\.gradle\caches\transforms-3\60137118acb37dcbf0a5beee10b702af\transformed\jetified-common-18.8.0\AndroidManifest.xml:17:13-43
+126            android:exported="false" >
+126-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\dc305a2857c5e87c2ab2a833d1d4a11a\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:11:13-37
+127            <meta-data
+127-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\dc305a2857c5e87c2ab2a833d1d4a11a\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:12:13-14:85
+128                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+128-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\dc305a2857c5e87c2ab2a833d1d4a11a\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:13:17-114
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\dc305a2857c5e87c2ab2a833d1d4a11a\transformed\jetified-play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:14:17-82
+130            <meta-data
+130-->[com.google.mlkit:vision-common:17.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\a48c1c11f95f8119e9304442e0f69dc0\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+131                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+131-->[com.google.mlkit:vision-common:17.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\a48c1c11f95f8119e9304442e0f69dc0\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:13:17-124
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.mlkit:vision-common:17.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\a48c1c11f95f8119e9304442e0f69dc0\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:14:17-82
+133            <meta-data
+133-->[com.google.mlkit:common:18.8.0] C:\Users\ALISH\.gradle\caches\transforms-3\60137118acb37dcbf0a5beee10b702af\transformed\jetified-common-18.8.0\AndroidManifest.xml:20:13-22:85
+134                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+134-->[com.google.mlkit:common:18.8.0] C:\Users\ALISH\.gradle\caches\transforms-3\60137118acb37dcbf0a5beee10b702af\transformed\jetified-common-18.8.0\AndroidManifest.xml:21:17-120
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.mlkit:common:18.8.0] C:\Users\ALISH\.gradle\caches\transforms-3\60137118acb37dcbf0a5beee10b702af\transformed\jetified-common-18.8.0\AndroidManifest.xml:22:17-82
+136        </service>
+137
+138        <provider
+138-->[com.google.mlkit:common:18.8.0] C:\Users\ALISH\.gradle\caches\transforms-3\60137118acb37dcbf0a5beee10b702af\transformed\jetified-common-18.8.0\AndroidManifest.xml:9:9-13:38
+139            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+139-->[com.google.mlkit:common:18.8.0] C:\Users\ALISH\.gradle\caches\transforms-3\60137118acb37dcbf0a5beee10b702af\transformed\jetified-common-18.8.0\AndroidManifest.xml:10:13-78
+140            android:authorities="com.autoexpense.mlkitinitprovider"
+140-->[com.google.mlkit:common:18.8.0] C:\Users\ALISH\.gradle\caches\transforms-3\60137118acb37dcbf0a5beee10b702af\transformed\jetified-common-18.8.0\AndroidManifest.xml:11:13-69
+141            android:exported="false"
+141-->[com.google.mlkit:common:18.8.0] C:\Users\ALISH\.gradle\caches\transforms-3\60137118acb37dcbf0a5beee10b702af\transformed\jetified-common-18.8.0\AndroidManifest.xml:12:13-37
+142            android:initOrder="99" />
+142-->[com.google.mlkit:common:18.8.0] C:\Users\ALISH\.gradle\caches\transforms-3\60137118acb37dcbf0a5beee10b702af\transformed\jetified-common-18.8.0\AndroidManifest.xml:13:13-35
+143
+144        <activity
+144-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ALISH\.gradle\caches\transforms-3\b337fd14137bb88f9dd27767773aecbc\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+145            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+145-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ALISH\.gradle\caches\transforms-3\b337fd14137bb88f9dd27767773aecbc\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+146            android:exported="false"
+146-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ALISH\.gradle\caches\transforms-3\b337fd14137bb88f9dd27767773aecbc\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+147            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+147-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ALISH\.gradle\caches\transforms-3\b337fd14137bb88f9dd27767773aecbc\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+148
+149        <meta-data
+149-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ALISH\.gradle\caches\transforms-3\f1819de731d09e3927009a14a501a644\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+150            android:name="com.google.android.gms.version"
+150-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ALISH\.gradle\caches\transforms-3\f1819de731d09e3927009a14a501a644\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+151            android:value="@integer/google_play_services_version" />
+151-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ALISH\.gradle\caches\transforms-3\f1819de731d09e3927009a14a501a644\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+152
+153        <provider
+153-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALISH\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+154            android:name="androidx.startup.InitializationProvider"
+154-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALISH\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+155            android:authorities="com.autoexpense.androidx-startup"
+155-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALISH\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+156            android:exported="false" >
+156-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALISH\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+157            <meta-data
+157-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALISH\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+158                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+158-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALISH\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+159                android:value="androidx.startup" />
+159-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ALISH\.gradle\caches\transforms-3\4381fccdde393d19d04161b40313d198\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+160            <meta-data
+160-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ALISH\.gradle\caches\transforms-3\03d7453e93f481786b4e1a44e097c9a6\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+161                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+161-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ALISH\.gradle\caches\transforms-3\03d7453e93f481786b4e1a44e097c9a6\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+162                android:value="androidx.startup" />
+162-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ALISH\.gradle\caches\transforms-3\03d7453e93f481786b4e1a44e097c9a6\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+163            <meta-data
+163-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+164                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+165                android:value="androidx.startup" />
+165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+166        </provider>
+167
+168        <uses-library
+168-->[androidx.window:window:1.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\59cf89d76baf82c9c8f87ebdd2d957a4\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+169            android:name="androidx.window.extensions"
+169-->[androidx.window:window:1.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\59cf89d76baf82c9c8f87ebdd2d957a4\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+170            android:required="false" />
+170-->[androidx.window:window:1.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\59cf89d76baf82c9c8f87ebdd2d957a4\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+171        <uses-library
+171-->[androidx.window:window:1.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\59cf89d76baf82c9c8f87ebdd2d957a4\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+172            android:name="androidx.window.sidecar"
+172-->[androidx.window:window:1.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\59cf89d76baf82c9c8f87ebdd2d957a4\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+173            android:required="false" />
+173-->[androidx.window:window:1.0.0] C:\Users\ALISH\.gradle\caches\transforms-3\59cf89d76baf82c9c8f87ebdd2d957a4\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+174
+175        <receiver
+175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+176            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+177            android:directBootAware="false"
+177-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+178            android:enabled="true"
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+179            android:exported="true"
+179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+180            android:permission="android.permission.DUMP" >
+180-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+181            <intent-filter>
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+182                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+183            </intent-filter>
+184            <intent-filter>
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+185                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+186            </intent-filter>
+187            <intent-filter>
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+188                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+188-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+188-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+189            </intent-filter>
+190            <intent-filter>
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+191                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+191-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+191-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ALISH\.gradle\caches\transforms-3\2d7e59e65c0683989da89981a01e18f0\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+192            </intent-filter>
+193        </receiver>
+194
+195        <service
+195-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\ALISH\.gradle\caches\transforms-3\65b4ae9dd694027457e0da5e106cd046\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+196            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+196-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\ALISH\.gradle\caches\transforms-3\65b4ae9dd694027457e0da5e106cd046\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+197            android:exported="false" >
+197-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\ALISH\.gradle\caches\transforms-3\65b4ae9dd694027457e0da5e106cd046\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+198            <meta-data
+198-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\ALISH\.gradle\caches\transforms-3\65b4ae9dd694027457e0da5e106cd046\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+199                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+199-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\ALISH\.gradle\caches\transforms-3\65b4ae9dd694027457e0da5e106cd046\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+200                android:value="cct" />
+200-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\ALISH\.gradle\caches\transforms-3\65b4ae9dd694027457e0da5e106cd046\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+201        </service>
+202        <service
+202-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\ALISH\.gradle\caches\transforms-3\a0ee27cd888b38748d4109075ec7bb4c\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+203            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+203-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\ALISH\.gradle\caches\transforms-3\a0ee27cd888b38748d4109075ec7bb4c\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+204            android:exported="false"
+204-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\ALISH\.gradle\caches\transforms-3\a0ee27cd888b38748d4109075ec7bb4c\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+205            android:permission="android.permission.BIND_JOB_SERVICE" >
+205-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\ALISH\.gradle\caches\transforms-3\a0ee27cd888b38748d4109075ec7bb4c\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+206        </service>
+207
+208        <receiver
+208-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\ALISH\.gradle\caches\transforms-3\a0ee27cd888b38748d4109075ec7bb4c\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+209            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+209-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\ALISH\.gradle\caches\transforms-3\a0ee27cd888b38748d4109075ec7bb4c\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+210            android:exported="false" />
+210-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\ALISH\.gradle\caches\transforms-3\a0ee27cd888b38748d4109075ec7bb4c\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+211    </application>
+212
+213</manifest>

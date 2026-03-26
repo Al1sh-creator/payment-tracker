@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\font_outfit.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\font\\outfit.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\layout_bottom_sheet_transaction_details.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\layout\\bottom_sheet_transaction_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\layout_activity_subscriptions.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\layout\\activity_subscriptions.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\layout_item_transaction.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\layout\\item_transaction.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\layout_activity_add_transaction.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\layout\\activity_add_transaction.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.autoexpense.app-merged_res-54:/layout_activity_main.xml.flat",
+        "source": "com.autoexpense.app-main-56:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\layout_activity_scanner.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\layout\\activity_scanner.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\xml_activity_main_scene.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\xml\\activity_main_scene.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\drawable_spinner_background.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\drawable\\spinner_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\drawable_rounded_indicator.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\drawable\\rounded_indicator.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\drawable_bg_gradient_green.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\drawable\\bg_gradient_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\layout_activity_transaction_list.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\layout\\activity_transaction_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\drawable_bg_gradient_red.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\drawable\\bg_gradient_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\drawable_bg_gradient_blue.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\drawable\\bg_gradient_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\raw_empty_state_anim.json.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\raw\\empty_state_anim.json"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\layout_activity_privacy_notice.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\layout\\activity_privacy_notice.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\drawable_badge_background.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\drawable\\badge_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-merged_res-54:\\layout_activity_split_bill.xml.flat",
+        "source": "C:\\Users\\ALISH\\.gradle\\daemon\\8.5\\com.autoexpense.app-main-56:\\layout\\activity_split_bill.xml"
+    }
+]

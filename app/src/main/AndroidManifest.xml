@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- SMS Permissions -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- Storage for CSV Export -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <!-- SMS permissions imply telephony; not required so the app can install on devices without SMS (e.g. some tablets / Chrome OS). -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AutoExpense">
+
+        <!-- Privacy Notice shown on first launch -->
+        <activity
+            android:name=".ui.activities.PrivacyNoticeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Dashboard -->
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="false" />
+
+        <!-- Transaction List -->
+        <activity
+            android:name=".ui.activities.TransactionListActivity"
+            android:exported="false" />
+
+        <!-- Add Transaction -->
+        <activity
+            android:name=".ui.activities.AddTransactionActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.activities.SubscriptionsActivity"
+            android:exported="false"
+            android:label="@string/title_subscriptions" />
+
+        <activity
+            android:name=".ui.activities.SplitBillActivity"
+            android:exported="false"
+            android:label="Split Bill" />
+
+        <activity
+            android:name=".ui.activities.ScannerActivity"
+            android:exported="false"
+            android:label="Scan Receipt" />
+
+        <!-- Settings -->
+        <activity
+            android:name=".ui.activities.SettingsActivity"
+            android:exported="false" />
+
+        <!-- SMS BroadcastReceiver -->
+        <receiver
+            android:name=".receiver.SmsReceiver"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Bank / UPI notification text capture (user must enable in system notification settings) -->
+        <service
+            android:name=".service.BankNotificationListenerService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

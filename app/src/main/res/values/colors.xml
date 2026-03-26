@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ════════════════════════════════════════════════
+         Material 3 Light Color Roles
+         (Seed color: Blue #1565C0 → primary palette)
+         ════════════════════════════════════════════════ -->
+    <color name="md_theme_light_primary">#1B5FA8</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#D6E4FF</color>
+    <color name="md_theme_light_onPrimaryContainer">#001B3E</color>
+
+    <color name="md_theme_light_secondary">#545F71</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#D8E3F8</color>
+    <color name="md_theme_light_onSecondaryContainer">#111C2B</color>
+
+    <!-- Tertiary = green tones (used for income / credit) -->
+    <color name="md_theme_light_tertiary">#1E6B3A</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#A8F5C1</color>
+    <color name="md_theme_light_onTertiaryContainer">#002111</color>
+
+    <!-- Error = red tones (used for expense / debit) -->
+    <color name="md_theme_light_error">#BA1A1A</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_errorContainer">#FFDAD6</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
+
+    <color name="md_theme_light_background">#F8F9FF</color>
+    <color name="md_theme_light_onBackground">#191C20</color>
+    <color name="md_theme_light_surface">#F8F9FF</color>
+    <color name="md_theme_light_onSurface">#191C20</color>
+    <color name="md_theme_light_surfaceVariant">#E1E2EC</color>
+    <color name="md_theme_light_onSurfaceVariant">#44474F</color>
+    <color name="md_theme_light_outline">#74777F</color>
+
+    <!-- ════════════════════════════════════════════════
+         Legacy aliases (keep for Java code references)
+         ════════════════════════════════════════════════ -->
+    <color name="primary">@color/md_theme_light_primary</color>
+    <color name="primary_dark">#1248A0</color>
+    <color name="primary_light">@color/md_theme_light_primaryContainer</color>
+    <color name="accent">@color/md_theme_light_tertiary</color>
+    <color name="error_red">@color/md_theme_light_error</color>
+    <color name="surface">@color/md_theme_light_surface</color>
+    <color name="on_surface">@color/md_theme_light_onSurface</color>
+    <color name="on_surface_variant">@color/md_theme_light_onSurfaceVariant</color>
+    <color name="background">@color/md_theme_light_background</color>
+
+    <!-- Transaction type indicator colors (used in adapter) -->
+    <color name="debit_red">@color/md_theme_light_error</color>
+    <color name="credit_green">@color/md_theme_light_tertiary</color>
+    <color name="card_debit">@color/md_theme_light_errorContainer</color>
+    <color name="card_credit">@color/md_theme_light_tertiaryContainer</color>
+
+    <!-- ════════════════════════════════════════════════
+         Premium UI Colors & Gradients
+         ════════════════════════════════════════════════ -->
+    <color name="gradient_blue_start">#1B5FA8</color>
+    <color name="gradient_blue_end">#4B9DFF</color>
+    
+    <color name="gradient_green_start">#1E6B3A</color>
+    <color name="gradient_green_end">#4CAF50</color>
+    
+    <color name="gradient_red_start">#BA1A1A</color>
+    <color name="gradient_red_end">#FF5252</color>
+
+    <!-- Refined Chart Colors (Professional & Muted) -->
+    <color name="chart_food">#8E97FD</color>
+    <color name="chart_travel">#FFCC5C</color>
+    <color name="chart_shopping">#FF6F61</color>
+    <color name="chart_utilities">#6BCB77</color>
+    <color name="chart_entertainment">#4D96FF</color>
+    <color name="chart_health">#F06292</color>
+    <color name="chart_education">#FF9671</color>
+    <color name="chart_misc">#9B51E0</color>
+
+</resources>

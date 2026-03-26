@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ════════════════════════════════════════════════
+         Material 3 Dark Color Roles
+         ════════════════════════════════════════════════ -->
+    <color name="md_theme_light_primary">#ADC8FF</color>
+    <color name="md_theme_light_onPrimary">#002F67</color>
+    <color name="md_theme_light_primaryContainer">#1B4896</color>
+    <color name="md_theme_light_onPrimaryContainer">#D6E4FF</color>
+
+    <color name="md_theme_light_secondary">#BBC7DB</color>
+    <color name="md_theme_light_onSecondary">#253140</color>
+    <color name="md_theme_light_secondaryContainer">#3B4858</color>
+    <color name="md_theme_light_onSecondaryContainer">#D8E3F8</color>
+
+    <color name="md_theme_light_tertiary">#8DD8A6</color>
+    <color name="md_theme_light_onTertiary">#003820</color>
+    <color name="md_theme_light_tertiaryContainer">#005231</color>
+    <color name="md_theme_light_onTertiaryContainer">#A8F5C1</color>
+
+    <color name="md_theme_light_error">#FFB4AB</color>
+    <color name="md_theme_light_onError">#690005</color>
+    <color name="md_theme_light_errorContainer">#93000A</color>
+    <color name="md_theme_light_onErrorContainer">#FFDAD6</color>
+
+    <color name="md_theme_light_background">#111318</color>
+    <color name="md_theme_light_onBackground">#E2E2E9</color>
+    <color name="md_theme_light_surface">#111318</color>
+    <color name="md_theme_light_onSurface">#E2E2E9</color>
+    <color name="md_theme_light_surfaceVariant">#44474F</color>
+    <color name="md_theme_light_onSurfaceVariant">#C4C6D0</color>
+    <color name="md_theme_light_outline">#8E9099</color>
+
+    <!-- Legacy night aliases -->
+    <color name="background">@color/md_theme_light_background</color>
+    <color name="surface">@color/md_theme_light_surface</color>
+    <color name="on_surface">@color/md_theme_light_onSurface</color>
+    <color name="on_surface_variant">@color/md_theme_light_onSurfaceVariant</color>
+    <color name="primary">@color/md_theme_light_primary</color>
+    <color name="primary_dark">@color/md_theme_light_primaryContainer</color>
+
+</resources>
