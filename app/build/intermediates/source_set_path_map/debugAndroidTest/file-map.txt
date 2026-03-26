@@ -1,4 +1,0 @@
-com.autoexpense.test.app-androidTest-0 C:\Users\ALISH\Desktop\payment tracker\app\build\generated\res\resValues\androidTest\debug
-com.autoexpense.test.app-mergeDebugAndroidTestResources-1 C:\Users\ALISH\Desktop\payment tracker\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.autoexpense.test.app-mergeDebugAndroidTestResources-2 C:\Users\ALISH\Desktop\payment tracker\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.autoexpense.test.app-merged_res-3 C:\Users\ALISH\Desktop\payment tracker\app\build\intermediates\merged_res\debugAndroidTest
