@@ -188,6 +188,16 @@ public class MainActivity extends AppCompatActivity {
         setupBarChart(filtered);
         renderBudget(debitTotal);
         calculateWeeklyInsights();
+        calculatePersonality(filtered);
+    }
+
+    private void calculatePersonality(List<TransactionEntity> filtered) {
+        com.autoexpense.utils.SpendingPersonality.PersonalityResult result = 
+            com.autoexpense.utils.SpendingPersonality.compute(filtered);
+        
+        binding.tvPersonalityEmoji.setText(result.emoji);
+        binding.tvPersonalityName.setText(result.name);
+        binding.tvPersonalityDesc.setText(result.description);
     }
 
     private void calculateWeeklyInsights() {
@@ -260,6 +270,9 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 binding.tvRemainingBudget.setText(String.format(Locale.getDefault(), "₹%.2f over budget", Math.abs(remaining)));
             }
+            
+            // Check and fire budget alerts
+            com.autoexpense.utils.BudgetAlertHelper.checkAndFireBudgetAlert(this, debitTotal, budget);
         } else {
             binding.budgetProgress.setVisibility(android.view.View.GONE);
             binding.tvRemainingBudget.setVisibility(android.view.View.GONE);
@@ -408,17 +421,21 @@ public class MainActivity extends AppCompatActivity {
     // ─── Permissions ─────────────────────────────────────────────────────────────
 
     private void requestSmsPermissions() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED
-                ||
-                ContextCompat.checkSelfPermission(this,
-                        Manifest.permission.RECEIVE_SMS) != PackageManager.PERMISSION_GRANTED) {
+        List<String> permissions = new ArrayList<>();
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED) {
+            permissions.add(Manifest.permission.READ_SMS);
+        }
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECEIVE_SMS) != PackageManager.PERMISSION_GRANTED) {
+            permissions.add(Manifest.permission.RECEIVE_SMS);
+        }
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                permissions.add(Manifest.permission.POST_NOTIFICATIONS);
+            }
+        }
 
-            ActivityCompat.requestPermissions(this,
-                    new String[] {
-                            Manifest.permission.READ_SMS,
-                            Manifest.permission.RECEIVE_SMS
-                    },
-                    SMS_PERMISSION_REQUEST_CODE);
+        if (!permissions.isEmpty()) {
+            ActivityCompat.requestPermissions(this, permissions.toArray(new String[0]), SMS_PERMISSION_REQUEST_CODE);
         }
     }
 
